@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기념품 쇼핑 - 김해 금빛 소도시 여행</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">금바다 투어</a></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">홈</a></li>
+                    <li><a href="tours.html">투어예약</a></li>
+                    <li><a href="shop.html" class="active">기념품샵</a></li>
+                    <li><a href="news.html">관광소식</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h2>기념품 쇼핑</h2>
+                <p>김해의 특별한 기념품을 만나보세요</p>
+            </div>
+
+            <div class="shop-filters">
+                <div class="filter-group">
+                    <label>카테고리:</label>
+                    <select id="category">
+                        <option value="all">전체</option>
+                        <option value="food">특산물/식품</option>
+                        <option value="craft">수공예품</option>
+                        <option value="accessory">액세서리</option>
+                        <option value="cosmetic">화장품</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>가격대:</label>
+                    <select id="priceRange">
+                        <option value="all">전체</option>
+                        <option value="under20">2만원 이하</option>
+                        <option value="20to50">2만원-5만원</option>
+                        <option value="over50">5만원 이상</option>
+                    </select>
+                </div>
+                <div class="cart-icon">
+                    <span class="cart-count">0</span>
+                    🛒
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">김해 수사</div>
+                        <div class="product-badge">베스트</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>김해 수사 선물세트</h3>
+                        <p class="product-description">달콤하고 신선한 김해 대표 수사</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(124)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">35,000원</span>
+                            <span class="original-price">40,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="hallabong">장바구니 담기</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">봉황 장식품</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>봉황 전통 장식품</h3>
+                        <p class="product-description">김해의 상징 봉황을 모티브로 한 장식품</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="review-count">(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">18,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="dolhareubang">장바구니 담기</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">김해 전통차</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>김해 전통차 세트</h3>
+                        <p class="product-description">김해 산에서 나는 약초로 만든 전통차</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(67)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">28,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="honey">장바구니 담기</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">김해 깨깨</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>김해 전통 깨깨</h3>
+                        <p class="product-description">고소한 김해 전통 방식으로 만든 깨깨</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="review-count">(156)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">25,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="pork-jerky">장바구니 담기</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">김해 항아리</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>김해 항아리 세트</h3>
+                        <p class="product-description">김해 지역 특산 항아리로 소중한 자료</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐</span>
+                            <span class="review-count">(43)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">22,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="green-tea">장바구니 담기</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="placeholder-image">금바다 초콜릿</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>금바다 특별 초콜릿</h3>
+                        <p class="product-description">김해 금바다의 매력을 담은 프리미엄 초콜릿</p>
+                        <div class="product-rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(201)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">15,000원</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-product="chocolate">장바구니 담기</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="page-btn">이전</button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">다음</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- 장바구니 모달 -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>장바구니</h3>
+            <div id="cartItems">
+                <p class="empty-cart">장바구니가 비어있습니다.</p>
+            </div>
+            <div class="cart-total">
+                <p>총 금액: <span id="totalAmount">0원</span></p>
+            </div>
+            <div class="cart-actions">
+                <button class="btn btn-secondary" onclick="closeCartModal()">계속 쇼핑</button>
+                <button class="btn btn-primary" onclick="checkout()">주문하기</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>금바다 투어</h4>
+                    <p>김해 봉황동의 아름다운 추억을 만들어드립니다</p>
+                </div>
+                <div class="footer-section">
+                    <h4>연락처</h4>
+                    <p>전화: 055-123-4567</p>
+                    <p>이메일: info@geumbada.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>바로가기</h4>
+                    <ul>
+                        <li><a href="tours.html">투어예약</a></li>
+                        <li><a href="shop.html">기념품샵</a></li>
+                        <li><a href="news.html">관광소식</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 금바다 투어. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
